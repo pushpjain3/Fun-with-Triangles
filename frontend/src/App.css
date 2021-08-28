@@ -12,7 +12,11 @@
 .menu-button{
   flex: 1;
   margin: auto;
-  width: 15vh;
+  width: 40vh;
+}
+.angles-input{
+  display: flex;
+  flex-direction: column;
 }
 
 
