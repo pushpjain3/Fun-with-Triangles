@@ -4,6 +4,15 @@
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.menu-button{
+  flex: 1;
+  margin: auto;
+  width: 15vh;
 }
 
 
