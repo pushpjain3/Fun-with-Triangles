@@ -8,7 +8,7 @@ function IsTriangle() {
 	};
 
 	const triangleChecker = () => {
-		if (angle_A + angle_B + angle_C === 180) {
+		if (Number(angle_A) + Number(angle_B) + Number(angle_C) === 180) {
 			setisTriangle(true);
 		} else {
 			setisTriangle(false);
