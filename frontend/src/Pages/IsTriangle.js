@@ -21,32 +21,46 @@ function IsTriangle() {
 	const [angle_C, setangle_C] = useState(0);
 	return (
 		<div>
-			<h3>Home</h3>
+			<h3>
+				<a href='/'>Home</a>{" "}
+			</h3>
 			<div>Check if the shape is a valid triangle:</div>
 			<div className='angles-input'>
-				<label htmlFor='angle-a'>Angle A</label>
+				<label htmlFor='angle-a' className='label-input'>
+					Angle A
+				</label>
 				<input
 					id='angle-a'
 					type='number'
+					className='input-box'
 					value={angle_A}
 					onChange={(e) => setangle_A(e.target.value)}
 				/>
-				<label htmlFor='angle-b'>Angle B</label>
+				<label htmlFor='angle-b' className='label-input'>
+					Angle B
+				</label>
 				<input
 					id='angle-b'
+					className='input-box'
 					type='number'
 					value={angle_B}
 					onChange={(e) => setangle_B(e.target.value)}
 				/>
-				<label htmlFor='angle-c'>Angle C</label>
+				<label htmlFor='angle-c' className='label-input'>
+					Angle C
+				</label>
 				<input
 					id='angle-c'
+					className='input-box'
 					type='number'
 					value={angle_C}
 					onChange={(e) => setangle_C(e.target.value)}
 				/>
-				<button onClick={submitButtonClickHandler}></button>
+				<button onClick={submitButtonClickHandler} className='input-box'>
+					Submit
+				</button>
 				{isTriangle && clicked && <div>Yes it is a triangle.</div>}
+				{!isTriangle && clicked && <div>No it is not a triangle.</div>}
 			</div>
 		</div>
 	);
