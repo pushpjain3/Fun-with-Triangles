@@ -8,11 +8,12 @@ function AreaOfTriangle() {
 		};
 
 		const areaCalculator = () => {
-			const a = Number(side_A);
-			const b = Number(side_B);
-			const c = Number(side_C);
-            const s = (a+b+c)/2;
-            var area = Math.sqrt(s*(s-a)(s-b)(s-c));
+			var a = Number(side_A);
+			var b = Number(side_B);
+			var c = Number(side_C);
+            var s = (a+b+c)/2;
+            var area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+            setisArea(area);
 		};
 
 		const [Area, setisArea] = useState(0);
@@ -24,7 +25,7 @@ function AreaOfTriangle() {
 				<h3>
 					<a href='/'>Home</a>{" "}
 				</h3>
-				<div>Check if the shape is a valid triangle:</div>
+				<div>Calculate the area of the triangle:</div>
 				<div className='angles-input'>
 					<label htmlFor='angle-a' className='label-input'>
 						Side A
@@ -57,12 +58,12 @@ function AreaOfTriangle() {
 						onChange={(e) => setside_C(e.target.value)}
 					/>
 					<label htmlFor='output-box' className='label-input'>
-						Hypotenuse
+						Area Of Triangle
 					</label>
 
 					<div id='output-box' className='outbut-box'>
 						{clicked && (
-							<div>{clicked && <div>Yes it is a triangle.</div>}</div>
+							<div>{clicked && <div>{Area}</div>}</div>
 						)}
 					</div>
 					<button onClick={submitButtonClickHandler} className='input-box'>
