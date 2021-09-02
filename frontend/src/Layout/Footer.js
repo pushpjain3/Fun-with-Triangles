@@ -1,11 +1,7 @@
 import React from 'react'
 
 function Footer() {
-    return (
-        <div>
-            pushpjain
-        </div>
-    )
+    return <div className='footer'>pushpjain</div>;
 }
 
 export default Footer

@@ -21,9 +21,6 @@ function IsTriangle() {
 	const [angle_C, setangle_C] = useState(0);
 	return (
 		<div>
-			<h3>
-				<a href='/'>Home</a>{" "}
-			</h3>
 			<div>Check if the shape is a valid triangle:</div>
 			<div className='angles-input'>
 				<label htmlFor='angle-a' className='label-input'>

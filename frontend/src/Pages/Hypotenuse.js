@@ -19,9 +19,6 @@ function Hypotenuse() {
 	const [side_B, setside_B] = useState(0);
 	return (
 		<div>
-			<h3>
-				<a href='/'>Home</a>{" "}
-			</h3>
 			<div>Calculate the Hypotenuse of the triangle:</div>
 			<div className='angles-input'>
 				<label htmlFor='angle-a' className='label-input'>

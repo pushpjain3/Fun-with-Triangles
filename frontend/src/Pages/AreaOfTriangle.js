@@ -22,9 +22,6 @@ function AreaOfTriangle() {
 		const [side_C, setside_C] = useState(0);
 		return (
 			<div>
-				<h3>
-					<a href='/'>Home</a>{" "}
-				</h3>
 				<div>Calculate the area of the triangle:</div>
 				<div className='angles-input'>
 					<label htmlFor='angle-a' className='label-input'>

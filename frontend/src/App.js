@@ -11,15 +11,22 @@ const App = ()=> {
   const [currentPage, setCurrentPage] = useState('menu')
   const buttonClickHandler = (page) => {setCurrentPage(page)};
   return (
-  <div className='App'>
-    {currentPage === "menu" && <Menu buttonClickHandler={buttonClickHandler} />}
-    {currentPage ==="quiz" && <Quiz/>}
-    {currentPage ==='area' && <AreaOfTriangle/>}
-    {currentPage ==="hypo" && <Hypotenuse/>}
-    {currentPage ==="check" && <IsTriangle/>}
-    <Footer/>
-    </div>
-    );
+		<div className='App'>
+			{currentPage !== "menu" && (
+				<h3>
+					<a href='/'>Home</a>{" "}
+				</h3>
+			)}
+			{currentPage === "menu" && (
+				<Menu buttonClickHandler={buttonClickHandler} />
+			)}
+			{currentPage === "quiz" && <Quiz />}
+			{currentPage === "area" && <AreaOfTriangle />}
+			{currentPage === "hypo" && <Hypotenuse />}
+			{currentPage === "check" && <IsTriangle />}
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
