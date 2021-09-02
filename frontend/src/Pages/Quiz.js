@@ -70,7 +70,7 @@ function Quiz() {
 				<div className='angles-input'>
                     {Questions.map((question,index) =>{
                         return (
-                            <QuizQuestion question={question} index={index} scoreChange={scoreChange}/>
+                            <QuizQuestion question={question} key={index} index={index} scoreChange={scoreChange}/>
                         )
                     })}
 					<button onClick={submitButtonClickHandler} className='input-box'>
