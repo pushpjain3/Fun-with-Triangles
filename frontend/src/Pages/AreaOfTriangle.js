@@ -22,7 +22,10 @@ function AreaOfTriangle() {
 		const [side_C, setside_C] = useState(0);
 		return (
 			<div>
-				<div>Calculate the area of the triangle:</div>
+				<div className='page-heading'>
+					Calculate the <span className='page-heading-special'>Area</span> of
+					the triangle:
+				</div>
 				<div className='angles-input'>
 					<label htmlFor='angle-a' className='label-input'>
 						Side A
@@ -59,9 +62,7 @@ function AreaOfTriangle() {
 					</label>
 
 					<div id='output-box' className='outbut-box'>
-						{clicked && (
-							<div>{clicked && <div>{Area}</div>}</div>
-						)}
+						{clicked && <div>{clicked && <div>{Area}</div>}</div>}
 					</div>
 					<button onClick={submitButtonClickHandler} className='input-box'>
 						Submit

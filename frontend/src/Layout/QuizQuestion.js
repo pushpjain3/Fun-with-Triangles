@@ -13,18 +13,33 @@ function QuizQuestion({ question, index, scoreChange }) {
 			</h2>
 			<div onChange={checkOption} className='options-set'>
 				<form>
-					<div className='options'>
-						<input type='radio' name='option' value={question["option_A"]} />
+					<label className='options' htmlFor={question["option_A"]}>
+						<input
+							type='radio'
+							name='option'
+							id={question["option_A"]}
+							value={question["option_A"]}
+						></input>
 						{question["option_A"]}
-					</div>
-					<div className='options'>
-						<input type='radio' name='option' value={question["option_B"]} />
+					</label>
+					<label className='options' htmlFor={question["option_B"]}>
+						<input
+							type='radio'
+							name='option'
+							id={question["option_B"]}
+							value={question["option_B"]}
+						></input>
 						{question["option_B"]}
-					</div>
-					<div className='options'>
-						<input type='radio' name='option' value={question["option_C"]} />
+					</label>
+					<label className='options' htmlFor={question["option_C"]}>
+						<input
+							type='radio'
+							name='option'
+							id={question["option_C"]}
+							value={question["option_C"]}
+						></input>
 						{question["option_C"]}
-					</div>
+					</label>
 				</form>
 			</div>
 		</div>

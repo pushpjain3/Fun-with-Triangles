@@ -12,8 +12,9 @@
 	flex-direction: column;
 	justify-content: safe center;
 	overflow-y: auto;
-	min-height: 90vh;
+	min-height: 80vh;
 	font-family: "Lato", sans-serif;
+	margin: 1rem auto 4rem auto;
 }
 
 .link {
@@ -21,8 +22,8 @@
 	color: var(--primary-dark);
 	border: solid 1px black;
 	background-color: var(--primary-color);
-  padding: 0.5rem;
-  color: black;
+	padding: 0.5rem;
+	color: black;
 	border-radius: 0.1rem;
 }
 .link:hover {
@@ -48,6 +49,36 @@
 	background-color: var(--primary-light);
 	color: var(--gray-white);
 }
+.heading-home {
+	width: 60vh;
+	margin: 1rem auto;
+	text-align: left;
+}
+.page-heading {
+	font-weight: 900;
+	width: 60vh;
+	margin: 1rem auto;
+	text-align: left;
+	font-size: 2rem;
+	color: var(--primary-dark);
+}
+.page-heading-special {
+	color: black;
+}
+.input-button {
+	border-radius: 0.4rem;
+	font-family: "Lato", sans-serif;
+	border: solid 1px black;
+	background-color: var(--primary-color);
+	font-weight: 900;
+	font-size: 1.2rem;
+	padding: 1rem;
+}
+.input-button:hover {
+	order: solid 4px var(--primary-dark);
+	background-color: var(--primary-light);
+	color: var(--gray-white);
+}
 .angles-input {
 	display: flex;
 	flex-direction: column;
@@ -61,22 +92,48 @@
 	margin: 1rem auto;
 	width: 60%;
 }
-.question-box {
-	text-align: left;
+.question-box{
+  text-align: left;
+  width: 60vh;
+  color: #EF4444;
 }
+
 .options-set {
-	display: flex;
-	flex-direction: row;
+	
+  width: 100%;
+}
+.options-set form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.options-set label{
+  font-size: 1.5rem;
 }
 .options {
-	font-weight: 400;
-	flex: 1;
+	font-weight: bold;
+  color: #1F2937;
+  font-size: 1.5rem;
 	text-align: left;
+  flex: 1;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.output-box {
+	padding: 0.5rem;
+	border: solid 1px black;
+	background-color: var(--primary-light);
+	min-height: 1rem;
+	max-width: 30vh;
+  font-size: 1.2rem;
+	margin: auto;
 }
 .footer {
 	margin: 1rem auto;
 	text-align: center;
 }
-.footer .link{
-  font-size: 2rem;
+.footer .link {
+	font-size: 2rem;
 }
