@@ -20,9 +20,10 @@ function Hypotenuse() {
 	return (
 		<div>
 			<div className='page-heading'>
-				Calculate the <span className='page-heading-special'>Hypotenuse</span> of the triangle:
+				Calculate the <span className='page-heading-special'>Hypotenuse</span>{" "}
+				of the triangle:
 			</div>
-			<div className='angles-input'>
+			<div className='angles-input question-box'>
 				<label htmlFor='angle-a' className='label-input'>
 					Side A
 				</label>
@@ -43,12 +44,15 @@ function Hypotenuse() {
 					value={side_B}
 					onChange={(e) => setside_B(e.target.value)}
 				/>
-				<label htmlFor='angle-c' className='label-input'>
+				<label htmlFor='angle-c' className='label-input '>
 					Hypotenuse
 				</label>
 
-				<div className='outbut-box'>{clicked && <div>{hypotenuse}</div>}</div>
-				<button onClick={submitButtonClickHandler} className='input-box'>
+				<div className='output-box'>{clicked && <div>{hypotenuse}</div>}</div>
+				<button
+					onClick={submitButtonClickHandler}
+					className='input-box input-button'
+				>
 					Submit
 				</button>
 			</div>

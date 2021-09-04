@@ -25,7 +25,7 @@ function IsTriangle() {
 				Check if the shape is a{" "}
 				<span className='page-heading-special'>valid triangle</span>:
 			</div>
-			<div className='angles-input'>
+			<div className='angles-input question-box'>
 				<label htmlFor='angle-a' className='label-input'>
 					Angle A
 				</label>
@@ -56,11 +56,18 @@ function IsTriangle() {
 					value={angle_C}
 					onChange={(e) => setangle_C(e.target.value)}
 				/>
-				<button onClick={submitButtonClickHandler} className='input-box'>
+				<button
+					onClick={submitButtonClickHandler}
+					className='input-box input-button'
+				>
 					Submit
 				</button>
-				{isTriangle && clicked && <div>Yes it is a triangle.</div>}
-				{!isTriangle && clicked && <div>No it is not a triangle.</div>}
+				{isTriangle && clicked && (
+					<div className='output-box'>Yes it is a triangle.</div>
+				)}
+				{!isTriangle && clicked && (
+					<div className='output-box'>No it is not a triangle.</div>
+				)}
 			</div>
 		</div>
 	);

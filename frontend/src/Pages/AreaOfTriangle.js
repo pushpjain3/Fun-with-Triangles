@@ -26,10 +26,9 @@ function AreaOfTriangle() {
 					Calculate the <span className='page-heading-special'>Area</span> of
 					the triangle:
 				</div>
-				<div className='angles-input'>
+				<div className='angles-input question-box'>
 					<label htmlFor='angle-a' className='label-input'>
 						Side A
-					</label>
 					<input
 						id='angle-a'
 						type='number'
@@ -37,9 +36,9 @@ function AreaOfTriangle() {
 						value={side_A}
 						onChange={(e) => setside_A(e.target.value)}
 					/>
+					</label>
 					<label htmlFor='angle-b' className='label-input'>
 						Side B
-					</label>
 					<input
 						id='angle-b'
 						className='input-box'
@@ -47,9 +46,9 @@ function AreaOfTriangle() {
 						value={side_B}
 						onChange={(e) => setside_B(e.target.value)}
 					/>
+					</label>
 					<label htmlFor='angle-c' className='label-input'>
 						Side C
-					</label>
 					<input
 						id='angle-c'
 						className='input-box'
@@ -57,14 +56,18 @@ function AreaOfTriangle() {
 						value={side_C}
 						onChange={(e) => setside_C(e.target.value)}
 					/>
+					</label>
 					<label htmlFor='output-box' className='label-input'>
 						Area Of Triangle
-					</label>
-
-					<div id='output-box' className='outbut-box'>
+					<div id='output-box' className='output-box'>
 						{clicked && <div>{clicked && <div>{Area}</div>}</div>}
 					</div>
-					<button onClick={submitButtonClickHandler} className='input-box'>
+					</label>
+
+					<button
+						onClick={submitButtonClickHandler}
+						className='input-box input-button'
+					>
 						Submit
 					</button>
 				</div>
